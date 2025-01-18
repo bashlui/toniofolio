@@ -1,9 +1,9 @@
 
 export const Hero = () => {
     return (
-        <section>
+        <section className="pt-8 pb-20">
             <div className="container">
-                <div className="bg-black">
+                <div className="bg-black ">
                     <p className="text-white">Lorem</p>
                 </div>
             </div>
