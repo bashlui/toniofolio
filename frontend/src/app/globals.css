@@ -10,4 +10,8 @@
     .code-text {
         @apply text-sm font-mono bg-[#222] text-[#f8f8f2] p-2 rounded-lg;
     }
+
+    .btn {
+        @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+    }
 }

@@ -5,17 +5,14 @@ export const Header = () => {
         <div className="container">
           <div className="flex items-center justify-end">
             <nav className="hidden md:flex gap-6 text-white items-center">
-              <a href="#" className="hover:text-black">
+              <a href="#" className="hover:text-white/60">
                 Home
               </a>
-              <a href="#" className="hover:text-black">
+              <a href="#" className="hover:text-white/60">
                 About
               </a>
-              <a href="#" className="hover:text-black">
+              <a href="#" className="hover:text-white/60">
                 Projects
-              </a>
-              <a href="#" className="hover:text-black">
-                Contact
               </a>
             </nav>
           </div>
