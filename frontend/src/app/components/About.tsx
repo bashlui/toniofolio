@@ -16,7 +16,7 @@ export const About = () => {
                 />
               </div>
             </div>
-  
+
             {/* Right Column - Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left lg:pl-12">
               <h1 className="text-5xl lg:text-6xl font-bold text-black mb-6">Who's Toño?</h1>
@@ -27,7 +27,7 @@ export const About = () => {
                 I specialize in front-end development, but I'm also comfortable working across the full stack. Whether it's crafting pixel-perfect UIs or optimizing backend performance, I'm always eager to tackle new challenges and learn new technologies.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                When I'm not coding, you can find me exploring the outdoors, experimenting in the kitchen, or diving into a good book. I believe in continuous learning and strive to grow both personally and professionally every day.
+                When I&apos;m not coding, you can find me exploring the outdoors, experimenting in the kitchen, or diving into a good book. I believe in continuous learning and strive to grow both personally and professionally every day.
               </p>
             </div>
           </div>

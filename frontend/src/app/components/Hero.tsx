@@ -19,9 +19,49 @@ export const Hero = () => {
               c.s. student @ tec, full-stack dev in progress :)
             </p>
             <div className="flex justify-center m-3">
-              <AiOutlineGithub className="text-white/60 text-4xl mt-3" />
-              <AiFillLinkedin className="text-white/60 text-4xl mt-3 ml-3" />
-              <AiOutlineFile className="text-white/60 text-4xl mt-3 ml-3" />
+              {/* Animated GitHub Icon */}
+              <motion.a
+                href="https://github.com" // Replace with your GitHub URL
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{
+                  scale: 1.1,
+                  color: "#ffffff", // Change color on hover
+                }}
+                className="text-white/60 text-4xl mt-3 cursor-pointer"
+              >
+                <AiOutlineGithub />
+              </motion.a>
+
+              {/* Animated LinkedIn Icon */}
+              <motion.a
+                href="https://linkedin.com" // Replace with your LinkedIn URL
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{
+                  scale: 1.1,
+                  color: "#ffffff", // Change color on hover
+                }}
+                className="text-white/60 text-4xl mt-3 ml-3 cursor-pointer"
+              >
+                <AiFillLinkedin />
+              </motion.a>
+
+              {/* Animated Resume Icon */}
+              <motion.a
+                href="/resume.pdf" // Replace with your resume URL
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{
+                  scale: 1.1,
+                  color: "#ffffff", // Change color on hover
+                }}
+                className="text-white/60 text-4xl mt-3 ml-3 cursor-pointer"
+              >
+                <AiOutlineFile />
+              </motion.a>
+
+              {/* Contact Me Button */}
               <motion.button
                 whileHover={{
                   scale: 1.1,
