@@ -4,7 +4,7 @@
 
 @layer components {
     .tag {
-        @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
+        @apply text-4xl inline-flex border border-[#222] px-3 py-1 rounded-lg tracking-tight;
     }
 
     .code-text {
@@ -13,5 +13,9 @@
 
     .btn {
         @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+    }
+
+    .title-text {
+        @apply text-5xl lg:text-6xl font-bold text-black mb-6
     }
 }

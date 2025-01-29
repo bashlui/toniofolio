@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="pt-8 pb-20 w-full h-screen bg-black flex items-center justify-center">
+    <section className="pt-8 pb-20 w-full h-[100vh] bg-black flex items-center justify-center">
       <div className="container">
         <div className="flex justify-center items-center">
           <div className="w-auto text-center">
-            <h1 className="text-6xl font-bold text-white">
+            <h1 className="text-6xl font-bold text-white" id='home'>
               hello,{" "}
               <span className="bg-gradient-to-b from-indigo-600 to-cyan-400 text-transparent bg-clip-text">
                 toño
@@ -21,7 +21,7 @@ export const Hero = () => {
             <div className="flex justify-center m-3">
               {/* Animated GitHub Icon */}
               <motion.a
-                href="https://github.com" // Replace with your GitHub URL
+                href="https://github.com/bashlui" // Replace with your GitHub URL
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{
@@ -35,7 +35,7 @@ export const Hero = () => {
 
               {/* Animated LinkedIn Icon */}
               <motion.a
-                href="https://linkedin.com" // Replace with your LinkedIn URL
+                href="https://www.linkedin.com/in/luisbolaina/" // Replace with your LinkedIn URL
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{
