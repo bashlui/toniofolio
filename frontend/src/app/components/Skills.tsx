@@ -1,9 +1,25 @@
 "use client";
 import { motion } from "framer-motion";
+import { FaReact, FaPython, FaNodeJs } from "react-icons/fa";
+import { SiTypescript, SiPostgresql, SiExpress } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaGolang } from "react-icons/fa6";
+
+
+const logos = [
+  { component: FaReact, color: "#FFFFFF" },
+  { component: SiTypescript, color: "#FFFFFF" },
+  { component: FaPython, color: "#FFFFFF" },
+  { component: FaNodeJs, color: "#FFFFFF" },
+  { component: RiTailwindCssFill, color: "#FFFFFF" },
+  { component: FaGolang, color: "#FFFFFF" },
+  { component: SiPostgresql, color: "#FFFFFF" },
+  { component: SiExpress, color: "#FFFFFF" },
+];
 
 export const Skills = () => {
   return (
-    <section className="pt-20 pb-20 w-full h-[75vh] bg-black">
+    <section className="pt-20 pb-20 w-full h-[100vh] bg-black">
       <div className="container mx-auto px-4">
         <div className="w-auto text-center">
           <h1 className="title-text text-[#f5f5f5]">
@@ -50,6 +66,30 @@ export const Skills = () => {
                 quam, facilis assumenda earum vel.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="flex justify-center items-center mt-10">
+          <div className="grid grid-cols-5 md:grid-cols-4 gap-14">
+            {logos.map(({ component: Icon, color }, index) => (
+              <motion.div
+                key={index}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: [1, 1.2, 1], opacity: 1 }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  delay: index * 0.3,
+                }}
+                className="flex justify-center items-center"
+              >
+                <Icon
+                  size={70}
+                  style={{ color }}
+                  className=""
+                />
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
